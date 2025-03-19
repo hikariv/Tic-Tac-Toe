@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 10000;
+    box-sizing: border-box;
+}
+
+#playerText {
+    font-family:"DorBlue";
+    background-color:rgba(255, 250, 240, 0.7)
+}
+
+.container2{
+    font-family:"Trebuchet MS";
+    font-size:larger
+}
+
+.container3{
+    display: block;
+    margin-left: 160px;
+}
+
+#text{
+    background-color:rgba(255, 250, 240, 0.7)
+}
+
+#background{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#monokuma{
+    width: 4%;
+    height: 4%;
+}
+
+#monomi{
+    width: 4%;
+    height: 4%;
+}
+
+#gameboard {
+    background-color:rgba(255, 250, 240, 0.7);
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
